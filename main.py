@@ -23,8 +23,9 @@ if user_input == 1:
     volleyball.random_option(team_count, player_count, player_names)
 else:
     print("You have chosen picking teams based on skill level")
-    volleyball.collect_names_to_dict(player_count, team_count)
+    player_scores = volleyball.collect_names_to_dict(player_count, team_count)
     volleyball.assign_player_scores()
+    volleyball.skillset_option(team_count, player_count, player_scores)
 
 
 

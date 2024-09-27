@@ -66,6 +66,7 @@ def collect_names_to_dict(num_players, num_teams):
         player_scores[name] = None
     for name in player_scores:
         print(name)
+    return player_scores
     
 def assign_player_scores():
     for name in player_scores:
@@ -78,11 +79,14 @@ def assign_player_scores():
                 print("Please enter a valid number for the score.")
    #print(player_scores.values())
     sorted_ranking = sorted(player_scores.values(), reverse=True)
-    print(sorted_ranking)
-    print("BALLS")
-  
-    
-    
-
-#def skillset_option(num_teams, num_players, player_names):
- #   print("cum")
+    print(f"Ranking Sorted: {sorted_ranking}")
+   
+def skillset_option(num_teams, num_players, player_scores):
+        print(player_scores.items())
+        scores = []
+        for value in player_scores.values():
+            #scores.append(player_scores.values)
+            scores.append(value)
+        print(scores)
+       #Assigned scores list with the dictionary values
+       #FIXME: sort the list and implement serpetine algorithm
