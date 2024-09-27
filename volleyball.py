@@ -79,7 +79,8 @@ def assign_player_scores():
    #print(player_scores.values())
     sorted_ranking = sorted(player_scores.values(), reverse=True)
     print(sorted_ranking)
-    
+    print("BALLS")
+  
     
     
 
